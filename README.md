@@ -1,6 +1,7 @@
 # Steeple Mate
 Simple Angular app(Demo) to call the Api to get data and bind the data with Html(Front-End)
 
+![screenshot_2018-08-20 steeple-mate](https://user-images.githubusercontent.com/30656940/44339624-b5b39280-a49f-11e8-87dc-4e9677c6e5b4.png)
 ## Front-end
  Using angular template(PrimeNg)[`https://www.primefaces.org/primeng/#/`].
  
