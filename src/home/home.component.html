@@ -7,47 +7,37 @@
 </header>
 
 <div class="container">
-    <p-dataView #dv [value]="model" [paginator]="true" [rows]="2" paginatorPosition="both" filterBy="FullName"
-    [sortField]="sortField" [sortOrder]="sortOrder">
+    <p-dataView #dv [value]="model" [paginator]="true" [rows]="2" paginatorPosition="both" filterBy="FullName">
     <p-header>
         <div class="ui-helper-clearfix">
             <div class="ui-g">
-                <div class="ui-g-12 ui-md-4">
-                    <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="Sort By" (onChange)="onSortChange($event)" [autoWidth]="false" [style]="{'min-width':'15em'}"></p-dropdown>
-                </div>
+                
                 <div class="ui-g-6 ui-md-4 filter-container">
                     <div style="position:relative">
-                        <input type="search" pInputText placeholder="Search by brand" (keyup)="dv.filter($event.target.value)">
+                        <input type="search" pInputText placeholder="Search by name" (keyup)="dv.filter($event.target.value)">
                     </div>
                 </div>
-                <div class="ui-g-6 ui-md-4" style="text-align:right">
-                    <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
-                </div>
+              
             </div>
         </div>
     </p-header>
     <ng-template let-data pTemplate="listItem">
         <div class="ui-g" style="padding: 2em;border-bottom: 1px solid #d9d9d9">
-  
-            <div class="ui-g-12 ui-md-8 car-details">
-                <div class="ui-g">
-                    <div class="ui-g-2 ui-sm-6">Id: </div>
-                    <div class="ui-g-10 ui-sm-6"><b>{{data.PersonId}}</b></div>
-
-                    <div class="ui-g-2 ui-sm-6">Full Name: </div>
-                    <div class="ui-g-10 ui-sm-6"><b>{{data.FullName}}</b></div>
+            <div class="col-md-1">
+          <img src="../assets//images//profiles.png">
+            </div>
+            <div class="col-md-11">
+                <div class="ui-g-12 ui-md-8 peoples-details">
+                    <div class="ui-g">
+                        <div class="col-md-3">Person Id: </div>
+                        <div class="col-md-9"><b>{{data.PersonId}}</b></div>
+    
+                        <div class="col-md-3">Full Name: </div>
+                        <div class="col-md-9"><b>{{data.FullName}}</b></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ng-template>
-    <ng-template let-data pTemplate="gridItem">
-        <div style="padding:.5em" class="ui-g-12 ui-md-3">
-            <p-panel [header]="car.vin" [style]="{'text-align':'center'}">
-                <img src="" width="60">
-                <div class="car-detail">{{data.PersonId}} - {{data.FullName}}</div>
-                <hr class="ui-widget-content" style="border-top:0">
-                <button pButton type="button" icon="pi pi-search" (click)="selectCar($event, car)" style="margin-top:0"></button>
-            </p-panel>
+         
         </div>
     </ng-template>
 </p-dataView>  

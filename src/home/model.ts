@@ -6,9 +6,3 @@ export class SteepleMate
  familyMembers: string;
  inactiveDate: string;
 }
-
-export class SelectItem
-{
-    label: string;
-    value: string;
-}
