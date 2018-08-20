@@ -1,12 +1,14 @@
 # Steeple Mate
 Simple Angular app(Demo) to call the Api to get data and bind the data with Html(Front-End)
+
 ## Front-end
  Using angular template(PrimeNg)[`https://www.primefaces.org/primeng/#/`].
+ 
 ## Get started
 ### Clone the repo
 ```shell
-git clone https://github.com/bryanforbes/intern-angular
-cd intern-angular
+git clone https://github.com/AbhishekDeveloper/Steeplemate.git
+cd Steeplemate
 ```
 ### Install npm packages
 Install the `npm` packages described in the `package.json` and verify that it works:
