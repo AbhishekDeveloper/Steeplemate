@@ -1,0 +1,67 @@
+.container {
+    z-index: 2;
+    position: relative;
+}
+
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+}
+
+#bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+}
+#page-header {
+    .bg(@height) {
+        background-color: #0A5FA0;
+        background-image: url("../../assets/images/banner.jpg");
+        height: @height;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .jumbo {
+        .bg(200px);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #fff;
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+    }
+
+    .mini {
+        .bg(160px);
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            letter-spacing: 0;
+        }
+    }
+}

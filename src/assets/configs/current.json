@@ -1,0 +1,5 @@
+{
+    "siteApiUrl": "https://www.steeplemate.com/v1/api/test",
+    "siteUrl": "http://localhost:4200",
+    "production": false
+}
