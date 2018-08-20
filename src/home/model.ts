@@ -1,8 +1,8 @@
 export class SteepleMate
 {
- personId: number;
- fullName: string;
- isContact: boolean;
- familyMembers: string;
- inactiveDate: string;
+ PersonId: number;
+ FullName: string;
+ IsContact: boolean;
+ FamilyMembers: string;
+ InactiveDate: string;
 }

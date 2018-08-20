@@ -6,8 +6,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HomeService } from './home.service';
 import { DataViewModule } from 'primeng/dataview';
-import {DropdownModule} from 'primeng/primeng';
-import {PanelModule} from 'primeng/panel';
+import { DropdownModule } from 'primeng/primeng';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   imports: [ 
